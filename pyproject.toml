@@ -1,53 +1,11 @@
 [project]
-name = "comfy-ui"
+name = "comfyui-uv-linux-nvidia-gpu"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "aiohttp>=3.11.8",
-    "alembic>=1.18.3",
-    "av>=14.2.0",
-    "comfy-aimdo>=0.1.8",
-    "comfy-kitchen>=0.2.7",
-    "comfyui-embedded-docs==0.4.1",
-    "comfyui-frontend-package==1.38.13",
-    "comfyui-workflow-templates==0.8.37",
-    "einops>=0.8.2",
-    "kornia>=0.7.1",
-    "numpy>=1.25.0",
-    "pillow>=12.1.0",
-    "psutil>=7.2.2",
-    "pydantic~=2.0",
-    "pydantic-settings~=2.0",
-    "pyyaml>=6.0.3",
+    "packaging>=26.0",
     "requests>=2.32.5",
-    "safetensors>=0.4.2",
-    "scipy>=1.17.0",
-    "sentencepiece>=0.2.1",
-    "spandrel>=0.4.1",
-    "sqlalchemy>=2.0.46",
-    "tokenizers>=0.13.3",
-    "torch>=2.10.0",
-    "torchaudio>=2.10.0",
-    "torchsde>=0.2.6",
-    "torchvision>=0.25.0",
-    "tqdm>=4.67.3",
-    "transformers>=4.50.3",
-    "yarl>=1.18.0",
+    "typer>=0.21.1",
 ]
-[[tool.uv.index]]
-name = "pytorch-cu130"
-url = "https://download.pytorch.org/whl/cu130"
-explicit = true
-[tool.uv.sources]
-torch = [
-  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-torchvision = [
-  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-torchaudio = [
-  { index = "pytorch-cu130", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-
