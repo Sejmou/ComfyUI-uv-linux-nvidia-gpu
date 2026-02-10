@@ -1,4 +1,4 @@
-# [WIP] ComfyUI for Image Generation
+# [WIP] Installation Workflow for ComfyUI with uv on Linux with NVIDIA GPU
 In this repo, I try to make ComfyUI installable in a more pleasant way for people running Linux with NVIDIA GPUs (things _should_ work for people on Mac as well, but without GPU support, obviously).
 
 Things were ONLY tested on my local setup (Ubuntu 22.04, NVIDIA RTX 3090 with 24GB of VRAM).
